@@ -11,6 +11,7 @@ using DSharpPlus;
 using DSharpPlus.CommandsNext;
 using System.Threading;
 using DSharpPlus.Entities;
+using Newtonsoft.Json;
 
 namespace Chorebotnet{
     class Chorecore{
@@ -21,6 +22,10 @@ namespace Chorebotnet{
         static DiscordChannel choreChannel;
 
         static void Main(string[] args){
+
+            //string text = System.IO.File.ReadAllText(@"FILE LOCATION REDACTED"); 
+            //List<Choreperson> tenants = JsonConvert.DeserializeObject<List<Choreperson>>(text);
+
             //Start daily reminders
             StartReminder(new TimeSpan(19, 00, 00), new TimeSpan(24, 00, 00));
 
